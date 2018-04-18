@@ -1,0 +1,2 @@
+# Global
+Projeto loja PHP 
