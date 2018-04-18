@@ -1,0 +1,100 @@
+body {
+  background: #fff;
+  opacity: 0.9;
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;     
+}
+.container {
+  margin-top: 30px;     
+}
+.login { 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.entrar {
+  width: 100%;
+}
+.title {
+  color: #444;
+  text-align: center;
+}
+.card {
+  width: 30%;
+  margin: 14px;
+  border: 1px solid rgba(000,000,000,0.3);
+  transition: border 0.7s;
+}
+.card:hover {
+  border: 1px solid rgba(000,000,000,0.5);
+}
+.card-header {
+
+  color: #fff;
+}
+.row {
+  padding: 8px;
+}
+.card-apartamento {
+  width: 100%;
+
+}
+.desativado {
+  opacity: 0.5;
+}
+.table {
+  background: #fff;
+  margin: 8px;
+}
+h2 {
+  color: #444;
+  margin: 0;
+  padding: 4px;
+}
+.text-right {
+  margin: 0;
+  padding: 0px;
+}
+header{
+  padding-top: 5%;
+
+}
+.hbar {
+  
+}
+thead {
+  color: #fff;
+}
+.linknav {
+  color: #fff;
+  font-size: 18px;
+  padding: 0 8px;
+  transition: box-shadow 0.3s;
+}
+.linknav:hover {
+  color: #fff;
+  box-shadow: 0px 2px ;
+}
+body {
+	background-color: #ccc;
+}
+
+.bd-navbar {
+	color: #fff;
+	margin-top: 0px;
+	min-height: 4rem;
+	background-color: #000;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05), inset 0 -1px 0
+		rgba(0, 0, 0, .1);
+}	
+.form-group{
+	float: left;
+}
+
+
+
+
+
+
