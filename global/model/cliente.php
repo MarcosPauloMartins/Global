@@ -1,6 +1,5 @@
 <?php
 
-error_reporting(0);
 class cliente {
     
     private $id = 0;
@@ -120,7 +119,7 @@ class cliente {
     }
     
     function update(){
-        $this->dbh->exec("UPDATE customers SET nome='$this->nome',cpf='$this->cpf',endereco='$this->endereco',bairro='$this->bairro',cep='$this->cep'cidade='$this->cidade'estado='$this->estado'telefone='$this->telefone'celular='$this->celular' WHERE id = $this->id");
+        $this->dbh->exec("UPDATE customers SET nome='$this->nome',cpf='$this->cpf',endereco='$this->endereco',bairro='$this->bairro',cep='$this->cep',cidade='$this->cidade',estado='$this->estado',telefone='$this->telefone',celular='$this->celular' WHERE id = $this->id");
         $this->read($this->id);
     }
     
@@ -135,7 +134,7 @@ class cliente {
         $x=0;
         foreach ($chmArray as $row) {
             $cliente = new cliente();
-            $cliente->read($row[id]);
+            $cliente->read($row['id']);
             $retorno[$x] = $cliente;
             $x++;
         }

@@ -1,11 +1,6 @@
-<?php error_reporting(0)?>
-<?php require_once '../config.php'; ?>
-<?php require_once DBAPI; ?>
-<?php include(HEADER_TEMPLATE); ?>
-<?php include_once '../model/cliente.php';?>
-<?php include '../controller/clientes.php'?>
+
 <div class="container bd-navbar">
-	<form id="cadastroDeCliente" action="../?controller=clientes&action=createupdate" method="post">
+	<form id="cadastroDeCliente" action="./?controller=clientes&action=createupdate" method="post">
 	
 	<div class="row">
 		<div class="form-group col-md-9">
@@ -51,7 +46,7 @@
 	<div class="row">
 		<div class="form-group col-md-4">
 			<label for="telefone">telefone residencial / comercial :</label> <input type="text" class="form-control"
-				name="cep" id="cep" value="<?=$telefone?>" placeholder="Informe o telefone" />
+				name="telefone" id="telefone" value="<?=$telefone?>" placeholder="Informe o telefone" />
 		</div>
 		
 		<div class="form-group col-md-4">
@@ -72,4 +67,3 @@
 	</form>
 	<br />
 </div>
-<?php include(FOOTER_TEMPLATE); ?>

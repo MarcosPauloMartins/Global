@@ -1,18 +1,16 @@
-<?php error_reporting(0)?>
-<?php require_once '../config.php'; ?>
-<?php require_once DBAPI; ?>
-<?php include(HEADER_TEMPLATE); ?>
-<div id="carouselExampleSlidesOnly" class="carousel slide"
+<?php if(empty($_GET['action'])){
+
+echo '<div id="carouselExampleSlidesOnly" class="carousel slide"
 	data-ride="carousel">
 	<div class="carousel-inner">
 		<div class="carousel-item active">
-			<img style="max-width: 100%; max-height: 100%" src="../_support/img/BannerMP1.png" />
+			<img style="max-width: 100%; max-height: 100%" src="./_support/img/BannerMP1.png" />
 		</div>
 		<div class="carousel-item">
-			<img style="max-width: 100%; max-height: 100%" src="../_support/img/BannerMP2.png" />
+			<img style="max-width: 100%; max-height: 100%" src="./_support/img/BannerMP2.png" />
 		</div>
 		<div class="carousel-item">
-			<img style="max-width: 100%; max-height: 100%" src="../_support/img/BannerMP3.png" />
+			<img style="max-width: 100%; max-height: 100%" src="./_support/img/BannerMP3.png" />
 		</div>
 	</div>
 </div>
@@ -36,7 +34,7 @@
 				suas compras com seus dados salvos, receba tambem diretamente em seu
 				e-mail ofertas especiais e cupons de desconto.</p>
 			<p style="text-align: center">
-				<a href="<?php  echo BASEURL; ?>view/cadastroCliente.php"><button type="button"
+				<a href="./cadastroCliente.php"><button type="button"
 						class="btn btn-secondary">Cadestre-se já</button></a>
 			</p>
 		</div>
@@ -51,5 +49,5 @@
 			</p>
 		</div>
 	</div>
-</div>
-<?php include(FOOTER_TEMPLATE); ?>
+</div>';
+}?>

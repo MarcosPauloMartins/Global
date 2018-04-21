@@ -6,11 +6,11 @@ class dataBase{
     
     public static function getHandler(){
         
-        $host = DB_HOST;
-        $dbname = DB_NAME;
-        $charset = CHARSET;
-        $user = DB_USER;
-        $password = DB_PASSWORD;
+        $host = "localhost";
+        $dbname = "global_store";
+        $charset = "utf8";
+        $user = "root";
+        $password = "";
         
         if ( !isset( self::$_instance ) ) {
             self::$_instance = new PDO("mysql:host=$host;dbname=$dbname;charset=$charset",$user, $password);
